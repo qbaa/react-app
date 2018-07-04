@@ -1,1 +1,4 @@
-# react-app
+# React SPA App
+
+* npm install
+* npm start
