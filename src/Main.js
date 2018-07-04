@@ -20,7 +20,7 @@ class Main extends Component {
             </ul>
             <div className="content">
               <Switch>
-                {data.map(item => <Route exact={item.path === "/" ? true : false} key={item.id} path={item.path} render={(props) => <Content title={item.title} content={item.text} />} />)}
+                {data.map(item => <Route exact={item.path === "/" ? true : false} key={item.id} path={item.path} render={(props) => <Content content={item} />} />)}
                 <Route path="*" component={NotFound} />
               </Switch>
             </div>
